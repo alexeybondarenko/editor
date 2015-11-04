@@ -1,0 +1,17 @@
+doctype html
+html
+  head(lang='en')
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    title Editor
+    link(rel='stylesheet', href='css/app.css')
+  body
+    .wrap
+      #editor.editor(contenteditable="true")
+        h3 Editor
+        p Content editor support bold, italic, and underline.
+        p We also recognize paragraphs
+        blockquote Ecognize paragraphs
+        ol
+          li 123
+    script(src='js/app.js')

@@ -1,0 +1,56 @@
+
+@import compass
+//@include global-reset
+@import url(https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic)
+
+html
+  font-size: 16px
+
+@import lib/base
+@import grid/grid
+@import typography
+
+html, body
+  height: 100%
+
+.icon
+  display: inline-block
+
+body
+  font: 200 100%/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif
+
+.wrap
+  //background: #f1f1f1
+  color: #333
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  overflow: auto
+.editor
+  padding: 20px
+  height: 100%
+  ol, ul
+    margin-left: 2em
+  ol
+    list-style: decimal
+  ul
+    list-style: disc
+  blockquote, q
+    quotes: "\201C""\201D""\2018""\2019"
+  blockquote
+    font-style: italic
+    padding-left: 2em
+    position: relative
+    &:before, &:after
+      color: #ccc
+    &:before
+      position: absolute
+      left: 0px
+      top: 15px
+      content: open-quote
+      font-size: 4em
+      line-height: 0.1em
+      margin-right: 0.25em
+      vertical-align: -0.4em
